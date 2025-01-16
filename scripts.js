@@ -1,3 +1,5 @@
+
+//Nav drop down when screen size changes//
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
@@ -48,7 +50,7 @@ menuIcon.addEventListener('mouseover', showNavbar);
 document.addEventListener('click', hideNavbar);
 
 
-
+//Toggle bar that hides different difficulty level projects when selected//
 function toggleProjects(level) {
     var levels = ['beginner', 'intermediate', 'advanced'];
 
@@ -69,13 +71,13 @@ function toggleProjects(level) {
     }
 }
 
-
-// If you want to add any interactive features, you can use JavaScript
+//Flips the certification card when hovered over//
 document.querySelectorAll('.certification-card').forEach(card => {
     card.addEventListener('click', () => {
         card.classList.toggle('flipped');
     });
 });
+<<<<<<< HEAD
 
 
 function clearForm() {
@@ -83,3 +85,5 @@ function clearForm() {
         document.getElementById('contactForm').reset();  // Clears the form
     }, 500); // Timeout to allow email to be sent before clearing
 }
+=======
+>>>>>>> 61b19215e83c8738ebfb534d39b5097125abcdaf

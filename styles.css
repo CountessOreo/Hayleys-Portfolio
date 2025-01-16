@@ -1,5 +1,4 @@
 /* Home page */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 * {
     margin: 0;
@@ -17,7 +16,6 @@
     --text-color: #fff;
     --main-color: #ebe831;
     --second-color: rgb(128, 17, 161);
-
 }
 
 html {
@@ -106,7 +104,6 @@ html ::-webkit-scrollbar-thumb {
         display: none;
         flex-direction: column;
         align-items: flex-start;
-
     }
 
     .navbar.active {
@@ -124,6 +121,7 @@ html ::-webkit-scrollbar-thumb {
     }
 }
 
+/*Home styles*/
 section {
     min-height: 100vh;
     padding: 5rem 9%;
@@ -235,13 +233,11 @@ span {
     .home-img img {
         width: 70vw;
         margin-top: 4rem;
-
     }
 }
 
 
 /* About section*/
-
 .about {
     background: var(--second-bg-color);
 }
@@ -329,7 +325,6 @@ span {
 
 
 /* Skills section*/
-
 .skills {
     background: var(--bg-color);
 }
@@ -364,6 +359,7 @@ span {
     box-shadow: 10px 10px 10px black;
     transform: scale(1.0.3);
 }
+
 .skills .container .bar .info {
     display: flex;
     flex-direction: column;
@@ -405,7 +401,6 @@ span {
     .skills .container {
         margin: 0;
         padding: 0;
-
     }
 
     .skills .container .row {
@@ -427,7 +422,6 @@ span {
 
 
 /* Projects section */
-
 .projects {
     padding: 4rem 2rem;
     background-color: var(--second-bg-color);
@@ -444,6 +438,8 @@ span {
 
 .projects-container {
     display: flex;
+    /*changed*/
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 2rem;
     max-width: 100%; 
@@ -610,7 +606,6 @@ span {
     display: flex;
     color: var(--main-color);
 }
-
 
 .education .timeline::after{
     content: '';
@@ -804,7 +799,6 @@ span {
 }
 
 /*Certifications*/
-
 .certifications {
     background: var(--second-bg-color);
     padding: 4rem 2rem;
@@ -957,7 +951,6 @@ span {
 
 
 /*Testimonials*/
-
 .testimonials {
     background: var(--bg-color);
 }
@@ -1032,7 +1025,6 @@ span {
 
 
 /*Contact section*/
-
 .contact {
     background: var(--second-bg-color);
 }
@@ -1076,32 +1068,33 @@ span {
     margin-top: 2rem;
 }
 
+
 /*Resume */
 .resume .heading {
     font-size: 5rem;
-    align-items: center; /* This is for flex or grid container */
-    justify-content: center; /* This is for flex or grid container */
+    align-items: center; 
+    justify-content: center;
     padding-bottom: 2rem;
     color: var(--main-color);
-    display: flex; /* Ensure it's a flex container */
-    justify-content: center; /* Center horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 .resume-container {
     width: 100%;
-    margin: 10px; /* Adjust margin as per your design */
-    display: flex; /* Use flexbox for positioning */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Adjust spacing between elements */
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
 }
 
 .resume-container img {
     max-width: 80%;
     max-height: 100%;
     border-radius: 1rem;
-    object-fit: contain; /* Maintain aspect ratio */
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -1122,8 +1115,8 @@ span {
     }
 }
 
-/*Footer*/
 
+/*Footer*/
 .footer {
     position: relative;
     bottom: 0;
@@ -1273,8 +1266,6 @@ span {
 
     .home-img img {
         width: 56vw;
-    }
-
-    
+    }    
 }
 
