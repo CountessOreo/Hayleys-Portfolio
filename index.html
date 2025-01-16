@@ -20,8 +20,8 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#testimonials">Testimonials</a>
+            <!--<a href="#certifications">Certifications</a> 
+            <a href="#testimonials">Testimonials</a> -->
             <a href="#contact">Contact</a>
             <a href="#resume">Resume</a>
         </nav>
@@ -47,7 +47,7 @@
                 <a href="#"><i class="fa-brands fa-github" style="color: #FFD43B;"></i></a>
                 <a href="https://x.com/HayleyTreutens"><i class="fa-brands fa-x-twitter" style="color: #FFD43B;"></i></a>
                 <a href="#"><i class="fa-brands fa-discord" style="color: #FFD43B;"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i></a>
+                <a href="https://www.instagram.com/hayleyintech?igsh=MWNveDE0ZTlxYXYyZw=="><i class="fa-brands fa-instagram" style="color: #FFD43B;"></i></a>
             </div>
 
             <p class="email">
@@ -56,7 +56,7 @@
             </p>
             
             <!--Link to CV and resume-->
-            <a href="#" class="btn">Hire me</a>
+            <a href="#contact" class="btn">Hire me</a>
         </div>
     </section>
 
@@ -155,6 +155,20 @@
 
                 <div class="bar">
                     <div class="info">
+                        <img src="Python.png" alt="Python">
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="JavaScript.png" alt="JavaScript" id="js">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
                         <img src="Html.png" alt="Html">
                         <span>HTML</span>
                     </div>
@@ -220,6 +234,27 @@
                     <div class="info">
                         <img src="discord.png" alt="discord">
                         <span>Discord Server</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="Git.png" alt="Git">
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="GitHub.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <img src="Jupyter Notebook.png" alt="Jupyter Notebook">
+                        <span>Jupyter Notebook</span>
                     </div>
                 </div>
 
@@ -362,7 +397,7 @@
                         <p>
                             I attended Cambridge International Education, where I gained a strong foundation through its rigorous curriculum and 
                             comprehensive assessments. This experience developed my confidence, responsibility, and innovation, equipping me with the 
-                            skills needed to excel in further education and beyond. <br><b>Hover over me to find out more information.</b>                        
+                            skills needed to excel in further education and beyond. <br><br><b>Hover over me to find out more information.</b>                        
                         </p>
                     </div>
                     <div class="details">
@@ -407,8 +442,12 @@
                             I am currently enrolled in an NQF Level 8 Honours degree program in Computer Science, specializing in Software Engineering. 
                             This program is designed to deepen my understanding of software development, systems architecture, and project management. 
                             Through challenging coursework and practical projects, I'm gaining valuable skills to innovate and tackle complex technological challenges. 
-                            This experience is preparing me to make meaningful contributions in the dynamic world of software engineering.
-                            <br><b>Hover over me to find out more information.</b>
+                            This experience is preparing me to make meaningful contributions in the dynamic world of software engineering.<br><br>
+                            <b>Grades:</b><br>
+                            First Year:  14/14 Distinctions<br>
+                            Second Year: 13/13 Distinctions<br>
+                            Third Year: (current year)
+                            <br><br><b>Hover over me to find out more information.</b>
                         </p>
                     </div>
                     <div class="details">
@@ -460,8 +499,9 @@
                 </div>
             </div>
             
+
             <!--Internship-->
-            <div class="container right">
+            <div class="container right" hidden>
                 <div class="content">
                     <div class="tag">
                         <h2>Internship</h2>
@@ -479,7 +519,7 @@
             </div>
             
             <!--Job 1-->
-            <div class="container left">
+            <div class="container left" hidden>
                 <div class="content">
                     <div class="tag">
                         <h2>Job-1</h2>
@@ -497,7 +537,7 @@
             </div>
             
             <!--Job 2-->
-            <div class="container right">
+            <div class="container right" hidden>
                 <div class="content">
                     <div class="tag">
                         <h2>Job-2</h2>
@@ -515,7 +555,7 @@
             </div>
             
             <!--Job 2-->
-            <div class="container left">
+            <div class="container left" hidden>
                 <div class="content">
                     <div class="tag">
                         <h2>Job-3</h2>
@@ -535,7 +575,7 @@
     </section>
     
     <!--Certifications-->
-    <section class="certifications" id="certifications">
+    <section class="certifications" id="certifications" hidden>
         <h2 class="heading">Certifications</h2>
         <div class="certifications-container">
             <div class="certification-card">
@@ -609,13 +649,10 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- Add more certification cards as needed -->
         </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
+    <section class="testimonials" id="testimonials" hidden>
         <div class="testimonials-box">
             <h2 class="heading">Testimonials</h2>
 
@@ -673,14 +710,14 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact Me</h2>
-        <form action="#">
+        <form action="mailto:hayleytreutens@gmail.com" method="POST" enctype="text/plain">
             <div id="input-box">
-                <input type="text" name="'name" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone number" required>
-                <input type="text" placeholder="Subject" >
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone number" required>
+                <input type="text" name="subject" placeholder="Subject" >
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btnp">
         </form>
     </section>
@@ -688,8 +725,8 @@
     <section class="resume" id="resume">
         <h2 class="heading">Resume</h2>
         <div class="resume-container">
-            <img src="Resume.webp" alt="">
-            <a href="path-to-your-resume.pdf" target="_blank" class="btn">Download Resume</a>
+            <img src="Resume Image.PNG" alt="">
+            <a href="H. Treutens Resume .pdf" target="_blank" class="btn">Download Resume</a>
         </div>
         
     </section>
@@ -701,7 +738,7 @@
             <a href="#"><i class="fa-brands fa-github"></i></a>
             <a href="https://x.com/HayleyTreutens"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-discord"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/hayleyintech?igsh=MWNveDE0ZTlxYXYyZw=="><i class="fa-brands fa-instagram"></i></a>
         </div>
         
         <p class="copyright">
