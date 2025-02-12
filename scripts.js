@@ -77,7 +77,6 @@ document.querySelectorAll('.certification-card').forEach(card => {
         card.classList.toggle('flipped');
     });
 });
-<<<<<<< HEAD
 
 
 function clearForm() {
@@ -85,5 +84,3 @@ function clearForm() {
         document.getElementById('contactForm').reset();  // Clears the form
     }, 500); // Timeout to allow email to be sent before clearing
 }
-=======
->>>>>>> 61b19215e83c8738ebfb534d39b5097125abcdaf
